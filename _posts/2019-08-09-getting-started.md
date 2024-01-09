@@ -92,7 +92,6 @@ After a few seconds, the local service will be published at _<http://127.0.0.1:4
 
 ## Deployment
 
-Before the deployment begins, check out the file `_config.yml`{: .filepath} and make sure the `url` is configured correctly. Furthermore, if you prefer the [**project site**](https://help.github.com/en/github/working-with-github-pages/about-github-pages#types-of-github-pages-sites) and don't use a custom domain, or you want to visit your website with a base URL on a web server other than **GitHub Pages**, remember to change the `baseurl` to your project name that starts with a slash, e.g, `/project-name`.
 
 Now you can choose _ONE_ of the following methods to deploy your Jekyll site.
 
@@ -107,11 +106,9 @@ There are a few things to get ready for.
   $ bundle lock --add-platform x86_64-linux
   ```
 
-Next, configure the _Pages_ service.
 
-1. Browse to your repository on GitHub. Select the tab _Settings_, then click _Pages_ in the left navigation bar. Then, in the **Source** section (under _Build and deployment_), select [**GitHub Actions**][pages-workflow-src] from the dropdown menu.  
-![Build source](pages-source-light.png){: .light .border .normal w='375' h='140' }
-![Build source](pages-source-dark.png){: .dark .normal w='375' h='140' }
+1. Browse to your repository on GitHub. Select the tab _Settings_, then click  in the left navigation bar. Then, in the **Source** section (under _Build and deployment_), select [**GitHub Actions**][pages-workflow-src] from the dropdown menu.  
+
 
 2. Push any commits to GitHub to trigger the _Actions_ workflow. In the _Actions_ tab of your repository, you should see the workflow _Build and Deploy_ running. Once the build is complete and successful, the site will be deployed automatically.
 
@@ -127,9 +124,8 @@ Go to the root of the source project, and build your site as follows:
 $ JEKYLL_ENV=production bundle exec jekyll b
 ```
 
-Unless you specified the output path, the generated site files will be placed in folder `_site`{: .filepath} of the project's root directory. Now you should upload those files to the target server.
+Unless you specified the output path, the generated site files will be placed in folder : .filepath} of the project's root directory. Now you should upload those files to the target server.
 
 [nodejs]: https://nodejs.org/
 [starter]: https://github.com/cotes2020/chirpy-starter
-[pages-workflow-src]: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow
 [latest-tag]: https://github.com/cotes2020/jekyll-theme-chirpy/tags
