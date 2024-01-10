@@ -16,7 +16,7 @@ timezone: America/Sao_Paulo
 
 title: 11B-X-1371 # the main title
 
-tagline: Malware Docs. # it will display as the sub-title
+tagline: Studies on Malware. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Studies for Malware Analysis.
