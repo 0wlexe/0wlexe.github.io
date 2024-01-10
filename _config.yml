@@ -14,9 +14,9 @@ timezone: America/Sao_Paulo
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Mal Docs # the main title
+title: 11B-X-1371 # the main title
 
-tagline: 11B-X-1371 # it will display as the sub-title
+tagline: Malware Docs. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Studies for Malware Analysis.
