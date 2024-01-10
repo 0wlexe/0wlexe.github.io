@@ -28,7 +28,7 @@ Note: pcap file found public resources.
 #### Observations
 If you plan on doing the LetsDefend challenge, I strongly recommend trying to do it by yourself before reading!
 
-### Walkthrough
+## Walkthrough
 First step was to open the PCAP file in a network protocol analyzer, for this task I’ll be using Wireshark so we can better analyze the traffic data.
 
 Having in mind that our first goal is to find a secret e-mail address, we can start by searching for the SMTP (Simple Mail Transfer Protocol) on Wireshark.
@@ -37,10 +37,10 @@ Having in mind that our first goal is to find a secret e-mail address, we can st
 
 Looking at the traffic data, we can already detect some valuable information:
 
-- There was a parameter request for user authentication (Request Parameter: LOGIN);
-- EHLO annlaptop - Possible name of the machine of which was requested the user authentication;
-- User: c25lYWt5ZzMza0Bhb2wuY29t (Base64 Cryptographed username);
-- Pass: NTU4cjAwbHo= (Base64 Cyptographed password).
+- There was a parameter request for user authentication `(Request Parameter: LOGIN)`;
+- `EHLO annlaptop` - Possible name of the machine of which was requested the user authentication;
+- User:` c25lYWt5ZzMza0Bhb2wuY29t` (Base64 Cryptographed username);
+- Pass: `NTU4cjAwbHo=` (Base64 Cyptographed password).
 
 Assuming this is Ann’s computer (EHLO annlaptop), we could find her credentials by decoding her username and password values.
 
