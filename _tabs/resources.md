@@ -1,6 +1,6 @@
 ---
 # the default layout is 'page'
-layout: default
+layout: resources
 icon: fa-solid fa-link
 order: 5
 ---
