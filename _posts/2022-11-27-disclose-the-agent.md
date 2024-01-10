@@ -2,19 +2,19 @@
 title: Disclose The Agent
 author: 0wlexe
 date: 2022-11-27 20:55:00 +0800
-categories: [Blogging, LetsDefend]
+categories: [Walkthroughs, LetsDefend]
 tags: [Wireshark, File Analysis, SMTP]
 pin: false
 img_path: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*FrflEPS13OZ9W0SUdk0owQ.png'
 ---
 
-## Summary
+## Summary:
 We reached the data of an agent leaking information. You have to disclose the agent.
 
-- Log file: [Download](https://app.letsdefend.io/download/downloadfile/smtpchallenge.zip) 
-- Pass: 321
+- **Log file:** [Download](https://app.letsdefend.io/download/downloadfile/smtpchallenge.zip) 
+- **Pass:** 321
 
-Note: pcap file found public resources.
+***Note: pcap file found public resources.***
 
 ### Information we should find
 
@@ -25,7 +25,7 @@ Note: pcap file found public resources.
 5. MD5 hash of the file Ann provided to her lover.
 
 
-#### Observations
+#### Observations:
 If you plan on doing the LetsDefend challenge, I strongly recommend trying to do it by yourself before reading!
 
 ## Walkthrough
@@ -39,7 +39,7 @@ Looking at the traffic data, we can already detect some valuable information:
 
 - There was a parameter request for user authentication `(Request Parameter: LOGIN)`;
 - `EHLO annlaptop` - Possible name of the machine of which was requested the user authentication;
-- User:` c25lYWt5ZzMza0Bhb2wuY29t` (Base64 Cryptographed username);
+- User: `c25lYWt5ZzMza0Bhb2wuY29t` (Base64 Cryptographed username);
 - Pass: `NTU4cjAwbHo=` (Base64 Cyptographed password).
 
 Assuming this is Ann’s computer (EHLO annlaptop), we could find her credentials by decoding her username and password values.
