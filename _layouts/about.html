@@ -33,13 +33,12 @@ layout: about
           </main>
           
 <article class="px-1">
-  {% if page.layout == 'page' or page.collection == 'tabs' %}
-    {% assign tab_key = page.title | downcase %}
-    {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
-  {% endif %}
-    <h1 class="dynamic-title">
+  {% assign tab_key = page.title | downcase %}
+  {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
+  
+  <h1 class="dynamic-title">
       {{ title }}
-    </h1>
+  </h1>
     <div class="content">
       Hi there, my name is Bea!
 
