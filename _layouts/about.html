@@ -68,15 +68,6 @@ layout: about
     {% if site.pwa.enabled %}
       {% include_cached notification.html lang=lang %}
     {% endif %}
-
-    <!-- JavaScripts -->
-
-    {% include js-selector.html %}
-
-    {% if page.mermaid %}
-      {% include mermaid.html %}
-    {% endif %}
-
-    {% include_cached search-loader.html %}
+    
   </body>
 </html>
