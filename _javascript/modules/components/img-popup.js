@@ -3,7 +3,7 @@
  *
  * See: https://github.com/dimsemenov/Magnific-Popup
  */
-/*
+
 export function imgPopup() {
   if ($('.popup') <= 0) {
     return;
@@ -20,4 +20,4 @@ export function imgPopup() {
     }
   });
 }
-*/
+
