@@ -64,7 +64,7 @@ By analysing the previous command, we have gathered the following information ab
 
 - `Compress-Archive` - Command to compress the archive;
 - `Path C:%Documents%*` - Local directory targeted by the malware;
-- `Update -DestinationPath C:%Documents%zniwkejnnwnqw%D0csz1p` - Update the destination path to create a new folder “zniwkejnnwnqw” containing the file “D0csz1p” which looks similar to ’docs.zip’.
+- `Update -DestinationPath C:%Documents%zniwkejnnwnqw%D0csz1p` - Update the destination path to create a new folder **“zniwkejnnwnqw”** containing the file **“D0csz1p”** which looks similar to **’docs.zip’.**
 
 Going back to the strings of our file, there’s more lines of code we should also pay attention to. From the following lines, we can “get” a POST request, an HTTP method designed to send data to the server from an HTTP client.
 
@@ -82,14 +82,14 @@ In order to have a better look at the script, we can use a tool to format the pr
 
 From the previous function, we can observe the following information:
 
-- The file is trying to interact with the external domain: “https://filebin[.]net/0flqlz0hiz6o4l32/D0csz1p" by a POST request;
-- The data it is trying to send are credentials that should be armazenated in the var data = ‘{“login”:””,”password”:””}’.
+- The file is trying to interact with the external domain: `“https://filebin[.]net/0flqlz0hiz6o4l32/D0csz1p"` by a POST request;
+- The data it is trying to send are credentials that should be armazenated in the var data = `‘{“login”:””,”password”:””}’`.
 
 Now in order to find which tool would have been used for creating the persistence mechanism within the payload, we should go back to the strings of the PDF and analyse the contents of the /ObjectAction.
 
 ![Figure 09 - Powershell script within the contents of the /ObjectAction](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ogFKxxMT34rKFm0x0g6UsQ.png)
 
-We can open the script on powershell in order to find out more information, but instead of actually running it, we should change the input from invoke-Expression $LoadCode (to run the script) into **“Write-Output $LoadCode” (to print the content of the script).**
+We can open the script on powershell in order to find out more information, but instead of actually running it, we should change the input from `invoke-Expression $LoadCode` (to run the script) into `“Write-Output $LoadCode”` (to print the content of the script).
 
 ![Figure 10 - Powershell ISE, Write-Output of the script](https://miro.medium.com/v2/resize:fit:720/format:webp/1*CQUlYjYT0L_FHdFVjHlubQ.png)
 
