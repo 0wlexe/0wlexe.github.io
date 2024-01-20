@@ -5,7 +5,7 @@ date: 2022-11-27 20:55:00 +0800
 categories: [Walkthroughs, LetsDefend]
 tags: [Wireshark, File Analysis, SMTP]
 pin: false
-imgage:
+image:
   path: /assets/img/posts/agent.png
 ---
 
