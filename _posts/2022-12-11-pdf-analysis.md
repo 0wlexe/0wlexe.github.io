@@ -52,11 +52,11 @@ Taking a closer look at the strings of the file, it is possible to find a powers
 
 ![Figure 03 - Powershell encoded command](https://miro.medium.com/v2/resize:fit:720/format:webp/1*MkaEM89trAJ-bI_cBygHIg.png)
 
-By decoding the previous command with a decoder tool, there’s a text of reversed characters, we can tell it by taking an even closer look: p1zsc0D%wqnwnnjekwinz%stnemucoD%:C htaPnoitanitseD- etadpU- *%stnemucoD%:C htaP- evihcrA-sserpmoC
+By decoding the previous command with a decoder tool, there’s a text of reversed characters, we can tell it by taking an even closer look: `p1zsc0D%wqnwnnjekwinz%stnemucoD%:C htaPnoitanitseD- etadpU- *%stnemucoD%:C htaP- evihcrA-sserpmoC`
 
 ![Figure 04 - Cryptii Decoder Tool, Base64 to text](https://miro.medium.com/v2/resize:fit:720/format:webp/1*euw4Dx1jIhWHGRIdX1SLZQ.png)
 
-Reversing the string, you should find the hidden powershell command: Compress-Archive -Path C:%Documents%* -Update -DestinationPath C:%Documents%zniwkejnnwnqw%D0csz1p
+Reversing the string, you should find the hidden powershell command: `Compress-Archive -Path C:%Documents%* -Update -DestinationPath C:%Documents%zniwkejnnwnqw%D0csz1p`
 
 ![Figure 05 - Code Beautify Tool, Reverse String](https://miro.medium.com/v2/resize:fit:720/format:webp/1*882lAlFlSasi_SXFGyqn5Q.png)
 
