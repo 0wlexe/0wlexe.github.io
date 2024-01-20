@@ -5,9 +5,7 @@ date: 2022-12-11 20:55:00 +0800
 categories: [Writeups, LetsDefend] 
 tags: [File Analysis, Malware Analysis, Phishing]
 pin: false
-image:
-  path: /assets/img/posts/pdf-analysis.png
-  alt: Analysis of a PDF file in order to detect if there’s any signs of malicious behavior and possible indicators of compromise.
+
 ---
 
 ## Summary:
