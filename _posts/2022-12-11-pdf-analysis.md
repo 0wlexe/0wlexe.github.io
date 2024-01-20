@@ -25,7 +25,7 @@ The employee has reported this incident to you as the analyst which has also for
 
 **NOTE: Do not open in your local environment. It is a malicious file.**
 
-This challenge prepared by [@DXploiter.](https://twitter.com/DXploiter)
+This challenge was prepared by [@DXploiter.](https://twitter.com/DXploiter)
 
 ## Information we should find:
 
