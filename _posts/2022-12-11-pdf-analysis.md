@@ -2,7 +2,7 @@
 title: PDF Analysis
 author: 0wlexe
 date: 2022-12-11 20:55:00 +0800
-categories: [Writeups, LetsDefend]
+categories: [Writeups, LetsDefend] 
 tags: [File Analysis, Malware Analysis]
 pin: false
 image:
