@@ -3,7 +3,7 @@ title: Email Analysis
 author: 0wlexe
 date: 2022-12-11 20:55:00 +0800
 categories: [Writeups, LetsDefend]
-tags: [File Analysis, Malware Analysis]
+tags: [File Analysis, Malware Analysis, Phishing]
 pin: false
 ---
 
