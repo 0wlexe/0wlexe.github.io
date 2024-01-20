@@ -10,12 +10,12 @@ image:
 ---
 
 ## Summary:
-We reached the data of an agent leaking information. You have to disclose the agent.
+Under the scenario of identified data that indicates there is an agent leaking information - You have to disclose the agent.
 
 - **Log file:** [Download](https://app.letsdefend.io/download/downloadfile/smtpchallenge.zip) 
 - **Pass:** 321
 
-***Note: pcap file found public resources.***
+***Note: pcap file found in public resources.***
 
 ### Information we should find
 
