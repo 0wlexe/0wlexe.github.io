@@ -2,7 +2,7 @@
 title: Disclose The Agent
 author: 0wlexe
 date: 2022-11-27 20:55:00 +0800
-categories: [Walkthroughs, LetsDefend]
+categories: [Writeups, LetsDefend]
 tags: [Wireshark, File Analysis, SMTP]
 pin: false
 image:
