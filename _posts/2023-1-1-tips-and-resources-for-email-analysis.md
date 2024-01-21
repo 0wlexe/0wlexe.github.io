@@ -89,10 +89,10 @@ Query Details Explanation
     -header: Show header
     -u: Show URLs
     -text: Show cleartext data
-    -extract-all: Extract all attachments
-
-    Note: Remember, you can either give a full file path or navigate to the required folder using the “cd” command.
+    -extract-all: Extract all attachments 
 ```
+**Note:** Remember, you can either give a full file path or navigate to the required folder using the “cd” command.
+ 
 An example of usage of the tool can be seen as below.
 
 ![Figure 03 - Usage of the emlAnalyzer](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ZR7kZU0JSTjyqZWgEQex1A.png)
