@@ -91,7 +91,7 @@ Query Details Explanation
     -text: Show cleartext data
     -extract-all: Extract all attachments 
 ```
-**Note:** Remember, you can either give a full file path or navigate to the required folder using the “cd” command.
+**Note:** You can either give a full file path or navigate to the required folder using the “cd” command.
  
 An example of usage of the tool can be seen as below.
 
