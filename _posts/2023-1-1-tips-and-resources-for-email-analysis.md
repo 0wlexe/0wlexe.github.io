@@ -82,16 +82,17 @@ We can use the **“emlAnalyzer”** tool to view the body of the email and anal
 It can be used to show the headers, body, embedded URLs, plaintext, HTML data, and attachments. The sample usage query is explained below.
 
 Query Details Explanation
-
+```bash
     emlAnalyzer: Main command
     -i: File to analyse
     -i /path-to-file/filename
-    Note: Remember, you can either give a full file path or navigate to the required folder using the “cd” command.
     -header: Show header
     -u: Show URLs
     -text: Show cleartext data
     -extract-all: Extract all attachments
 
+    Note: Remember, you can either give a full file path or navigate to the required folder using the “cd” command.
+```
 An example of usage of the tool can be seen as below.
 
 ![Figure 03 - Usage of the emlAnalyzer](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ZR7kZU0JSTjyqZWgEQex1A.png)
@@ -235,5 +236,5 @@ This could be a **social engineering** tactic to get financial information from 
 - *[TryHackMe: Advent of Cyber 2022 - Day 6: E-mail Analysis](https://tryhackme.com/room/adventofcyber4)*
 - *[LetsDefend - Phishing Email Analysis](https://app.letsdefend.io/training/lessons/phishing-email-analysis)*
 - *[Phishing Attacks: A Recent Comprehensive Study and a New Anatomy](https://www.frontiersin.org/articles/10.3389/fcomp.2021.563060/full)*
-- *[Examples of Phishing Email: 20 Emails That Don’t Look Like It](https://www.aura.com/learn/phishing-email-examples#3.-Suspicious-activity-notice)
+- *[Examples of Phishing Email: 20 Emails That Don’t Look Like It](https://www.aura.com/learn/phishing-email-examples#3.-Suspicious-activity-notice)*
 
