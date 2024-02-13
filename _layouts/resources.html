@@ -15,12 +15,67 @@ layout: default
      <p> List of tools and links for malware analysis.</p>
 
 
-<div id="page-category">
-  <h1 class="ps-lg-2">
-    <i class="far fa-folder-open fa-fw text-muted"></i>
-    Debuggers
-    <span class="lead text-muted ps-2"> Test </span>
-  </h1>
+    <div class="card categories">
+      <!-- top-category -->
+      <div
+        id="{{ HEAD_PREFIX }}{{ group_index }}"
+        class="card-header d-flex justify-content-between hide-border-bottom"
+      >
+        <span class="ms-2">
+          <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i>
+
+          <a href="{{ _category_url | relative_url }}" class="mx-2"> TEST </a>
+        </span>
+
+        <!-- arrow -->
+        {% if sub_categories_size > 0 %}
+          <a
+            href="#{{ LIST_PREFIX }}{{ group_index }}"
+            data-bs-toggle="collapse"
+            aria-expanded="true"
+            aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
+            class="category-trigger hide-border-bottom"
+          >
+            <i class="fas fa-fw fa-angle-down"></i>
+          </a>
+        {% else %}
+          <span data-bs-toggle="collapse" class="category-trigger hide-border-bottom disabled">
+            <i class="fas fa-fw fa-angle-right"></i>
+          </span>
+        {% endif %}
+      </div>
+      <!-- .card-header -->
+
+      <!-- Sub-categories -->
+        <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show" aria-expanded="true">
+          <ul class="list-group">
+                <i class="far fa-folder fa-fw"></i>
+            
+                <a href="{{ _sub_ctg_url | relative_url }}" class="mx-2"> TEST 2</a>
+
+                {% assign posts_size = site.categories[sub_category] | size %}
+                <span class="text-muted small font-weight-light">
+                  {{ posts_size }}
+
+                  {% if posts_size > 1 %}
+                    {{
+                      site.data.locales[lang].categories.post_measure.plural
+                      | default: site.data.locales[lang].categories.post_measure
+                    }}
+                  {% else %}
+                    {{
+                      site.data.locales[lang].categories.post_measure.singular
+                      | default: site.data.locales[lang].categories.post_measure
+                    }}
+                  {% endif %}
+                </span>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+    <!-- .card -->
 
      
     </div>
