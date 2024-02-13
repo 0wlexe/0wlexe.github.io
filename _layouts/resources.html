@@ -14,70 +14,30 @@ layout: default
     <div class="content">
      <p> List of tools and links for malware analysis.</p>
 
+<p> <ul>
+  
 
-    <div class="card categories">
-      <!-- top-category -->
-      <div
-        id="{{ HEAD_PREFIX }}{{ group_index }}"
-        class="card-header d-flex justify-content-between hide-border-bottom"
-      >
-        <span class="ms-2">
-          <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i>
-
-          <a href="{{ _category_url | relative_url }}" class="mx-2"> TEST </a>
-        </span>
-
-        <!-- arrow -->
-        {% if sub_categories_size > 0 %}
-          <a
-            href="#{{ LIST_PREFIX }}{{ group_index }}"
-            data-bs-toggle="collapse"
-            aria-expanded="true"
-            aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
-            class="category-trigger hide-border-bottom"
-          >
-            <i class="fas fa-fw fa-angle-down"></i>
-          </a>
-        {% else %}
-          <span data-bs-toggle="collapse" class="category-trigger hide-border-bottom disabled">
-            <i class="fas fa-fw fa-angle-right"></i>
-          </span>
-        {% endif %}
-      </div>
-      <!-- .card-header -->
-
-      <!-- Sub-categories -->
-        <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show" aria-expanded="true">
-          <ul class="list-group">
-                <i class="far fa-folder fa-fw"></i>
-            
-                <a href="{{ _sub_ctg_url | relative_url }}" class="mx-2"> TEST 2</a>
-
-                {% assign posts_size = site.categories[sub_category] | size %}
-                <span class="text-muted small font-weight-light">
-                  {{ posts_size }}
-
-                  {% if posts_size > 1 %}
-                    {{
-                      site.data.locales[lang].categories.post_measure.plural
-                      | default: site.data.locales[lang].categories.post_measure
-                    }}
-                  {% else %}
-                    {{
-                      site.data.locales[lang].categories.post_measure.singular
-                      | default: site.data.locales[lang].categories.post_measure
-                    }}
-                  {% endif %}
-                </span>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
-    </div>
-    <!-- .card -->
-
-     
+<li>strings/FLOSS: <a href="https://github.com/mandiant/flare-floss"></a> </li>
+<li>PEView: <a href="http://wjradburn.com/software/"></a></li>
+<li>upx: <a href="https://upx.github.io/"></a></li>
+<li>PEStudio: <a href="https://www.winitor.com/download"></a></li>
+<li>Capa: <a href="https://github.com/mandiant/capa"></a></li>
+<li>Wireshark: <a href="https://www.wireshark.org/"></a></li>
+<li>Sysinternals (Procmon, TCPView): <a href="https://learn.microsoft.com/en-us/sysinternals/downloads/"></a></li>
+<li>nc/ncat: <a href="https://nmap.org/download"></a></li>
+<li>Cutter: <a href="https://github.com/rizinorg/cutter"></a></li>
+<li>x32/x64dbg: <a href="https://x64dbg.com/"></a></li>
+<li>Process Hacker 2 (now known as System Informer): <a href="https://systeminformer.sourceforge.io/"></a></li>
+<li>scdbg: <a href="https://github.com/dzzie/SCDBG"></a></li>
+<li>dnSpy/dnSpyEx: <a href="https://github.com/dnSpyEx/dnSpy"></a></li>
+<li>PEBear: <a href="https://hshrzd.wordpress.com/pe-bear/"></a></li>
+<li>YARA: <a href="https://github.com/VirusTotal/yara"></a></li>
+<li>base64 (built in Linux bin)</li>
+<li>OLEdump: <a href="https://github.com/DidierStevens/DidierStevensSuite/blob/master/oledump.py"></a></li>
+<li>MobSF (Docker Container): <a href="https://github.com/MobSF/Mobile-Security-Framework-MobSF"></a> |  <a href="https://hub.docker.com/r/opensecurity/mobile-security-framework-mobsf/"></a></li>
+<li>INetSim: <a href="https://www.inetsim.org/"></a></li>
+</ul> </p>
+  
     </div>
   {% else %}
     {{ content }}
